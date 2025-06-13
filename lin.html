@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinsky Putri Media Sosial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #2196f3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 400px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2196f3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Selamat Datang Di Alinsky Putri Media Sosial</h2>
+        <small>Login Register</small>
+    </div>
+    <div class="container">
+        <h3>Register</h3>
+        <form action="/register" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm">Konfirmasi Password:</label>
+            <input type="password" id="confirm" name="confirm" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putri skyy Media Sosial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #2196f3;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        select, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #2196f3;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+        .post {
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .username {
+            color: #1976d2;
+            font-weight: bold;
+        }
+        .timestamp {
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Selamat Datang Di Putri Alin Media Sosial</h2>
+        <div>
+            <a href="#">Beranda</a>
+            <a href="#">Profil</a>
+            <a href="#">Pesan</a>
+            <a href="#">Cari Pengguna</a>
+            <a href="#">Logout</a>
+            (<strong>Harvey_Van_Leeuwen</strong>)
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Beranda</h3>
+        <form>
+            <label for="jenis">Buat Postingan</label>
+            <select id="jenis">
+                <option value="teks">Teks</option>
+                <option value="gambar">Gambar</option>
+            </select>
+            <textarea placeholder="Tulis sesuatu..."></textarea>
+            <button type="submit">Posting</button>
+        </form>
+
+        <div class="post">
+            <div class="username">Harvey_Van_Leeuwen</div>
+            <div class="timestamp">2025-05-19 10:38:12</div>
+            <p>Hallo</p>
+            <img src=>"foto sekolah.jpg" alt="Foto bersama siswa dan guru di depan sekolah">
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Alinsky Media Sosial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+    .navbar {
+      background-color: #1e88e5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      font-weight: bold;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h2>Selamat Datang Di Alinsky Putri Media Sosial</h2>
+    <a href="#">Login</a>
+    <a href="#">Register</a>
+  </div>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
